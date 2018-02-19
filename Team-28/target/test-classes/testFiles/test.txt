@@ -1,0 +1,4 @@
+p=n
+mi=ai
+bj=cj
+q=t
