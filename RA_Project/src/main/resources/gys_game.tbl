@@ -1,0 +1,149 @@
+splash_image	a	1	splash_obama.gif	-
+dennis	a	1	dennis.jpg	-
+
+enemy_tank_map	enemytanks.gif				0	32	32	32	0	0
+rock_map_top	rocks.gif				0	0	32	32	0	0
+rock_map_bottom	rocks.gif				0	32	32	32	0	0
+terrain_map		terrain.gif				96	96	32	32	0	0
+beam_map		lazer.gif				0	0	16	32	0	0
+engineer_map	engineer.gif			0	0	32	32	0	0
+robot_map_row1		robot.gif				0	0	64	64	0	0
+robot_map_row2		robot.gif				0	64	64	64	0	0
+robot_map_row3		robot.gif				0	128	64	64	0	0
+robot_map_row4		robot.gif				0	192	64	64	0	0
+sandbag_map		sandbags.gif		0	0	29	32	0	0
+nyan_map	lazer_nyan.gif		0	0	32	32	0	0
+tennis_map	tennis.gif			0	0	16	16	0	0
+colored_tank_map	hero_tank_colors.gif	0	0	32	32	0	0
+fire_map	explo32tr.gif	0	0	32	32	0	0
+
+
+
+
+fire1		s	1	fire_map	0	-
+fire2		s	1	fire_map	1	-
+fire3		s	1	fire_map	2	-
+fire4		s	1	fire_map	3	-
+fire5		s	1	fire_map	4	-
+fire6		s	1	fire_map	5	-
+fire7		s	1	fire_map	6	-
+
+colored_tank1		s	1	colored_tank_map	0	-
+colored_tank2		s	1	colored_tank_map	1	-
+colored_tank3		s	1	colored_tank_map	2	-
+colored_tank4		s	1	colored_tank_map	3	-
+colored_tank5		s	1	colored_tank_map	4	-
+colored_tank6		s	1	colored_tank_map	5	-
+colored_tank7		s	1	colored_tank_map	6	-
+colored_tank8		s	1	colored_tank_map	7	-
+
+
+
+tank		s	1	tank.gif			-	0	0	32	32
+tank_transparent	s	1	tank_transparent.gif	-	0	0	32	32
+plane		s	1	plane.gif			y	0	0	128	64
+bullet		s	1	bullet_shifted.gif	-	0	0	16	16
+star		s	1	star.gif			-	0	0	32	32
+missile		s	1	missile.gif			-	14	0	4	32
+cupcake		s	1	cupcake.gif			-	0	0	32	32
+missile_l		s	1	missile.gif			l	0	0	4	32
+missile_r		s	1	missile.gif			r	0	0	4	32
+beam1		s	1	beam_map	0	-
+beam2		s	1	beam_map	1	-
+beam3		s	1	beam_map	2	-
+beam4		s	1	beam_map	3	-
+beam5		s	1	beam_map	4	-
+beam6		s	1	beam_map	5	-
+beam7		s	1	beam_map	6	-
+beam8		s	1	beam_map	7	-
+nyan1		s	1	nyan_map	0	r
+nyan2		s	1	nyan_map	1	r
+nyan3		s	1	nyan_map	2	r
+nyan4		s	1	nyan_map	3	r
+nyan5		s	1	nyan_map	4	r
+nyan6		s	1	nyan_map	5	r
+nyan7		s	1	nyan_map	6	r
+nyan8		s	1	nyan_map	7	r
+tennis1		s	1	tennis_map	0	-
+tennis2		s	1	tennis_map	1	-
+tennis3		s	1	tennis_map	2	-
+tennis4		s	1	tennis_map	3	-
+
+
+
+copter		s	1	copter.gif				-	0	0	32	32
+copter_l1	s	1	copter_left.gif			-	0	0	32	32
+copter_l2	s	1	copter_left2.gif		-	0	0	32	32
+copter_r1	s	1	copter_left.gif			x	0	0	32	32
+copter_r2	s	1	copter_left2.gif		x	0	0	32	32
+
+
+
+enemy_tank_l1	s	1	enemy_tank_map	0	x	0	0	32	32
+enemy_tank_l2	s	1	enemy_tank_map	2	x	0	0	32	32
+enemy_tank_l3	s	1	enemy_tank_map	4	x	0	0	32	32
+enemy_tank_l4	s	1	enemy_tank_map	6	x	0	0	32	32
+enemy_tank_r1	s	1	enemy_tank_map	0	-	0	0	32	32
+enemy_tank_r2	s	1	enemy_tank_map	2	-	0	0	32	32
+enemy_tank_r3	s	1	enemy_tank_map	4	-	0	0	32	32
+enemy_tank_r4	s	1	enemy_tank_map	6	-	0	0	32	32
+
+robot_r1	s	1	robot_map_row3	0	-
+robot_r2	s	1	robot_map_row3	1	-
+robot_r3	s	1	robot_map_row3	2	-
+robot_r4	s	1	robot_map_row3	3	-
+robot_l1	s	1	robot_map_row2	0	-
+robot_l2	s	1	robot_map_row2	1	-
+robot_l3	s	1	robot_map_row2	2	-
+robot_l4	s	1	robot_map_row2	3	-
+
+robot_l		robot_l1;robot_l2;robot_l3;robot_l4;	0.3
+robot_r		robot_r1;robot_r2;robot_r3;robot_r4;	0.3
+
+
+engineer_r1	s	1	engineer_map	0	-	
+engineer_r2	s	1	engineer_map	1	-	
+engineer_r3	s	1	engineer_map	2	-	
+engineer_l1	s	1	engineer_map	0	x
+engineer_l2	s	1	engineer_map	1	x
+engineer_l3	s	1	engineer_map	3	x
+
+
+engineer_l	engineer_l1;engineer_l2;engineer_l3		0.3
+engineer_r	engineer_r1;engineer_r2;engineer_r3		0.3
+
+empty_w		 	0	empty-white.gif		-
+empty_0		 gr	0	terrain_map		0	-
+empty_1		 bl	0	terrain_map		1	-
+empty_2		 gr	0	terrain_map		2	-
+
+turret	mg	1	turret.gif	-
+rock	m	1	rock_map_top	0	-
+rock2	m2	2	rock_map_top	1	-
+rock3	m3	3	rock_map_top	2	-
+rock4	m4	4	rock_map_top	3	-
+rock5	m5	5	rock_map_bottom	0	-
+rock6	m6	6	rock_map_bottom	2	-
+rock7	m7	7	rock_map_bottom	3	-
+
+sandbag		b	10	sandbag_map	0	-
+sandbag2	b11	11	sandbag_map	1	-
+sandbag3	b12	12	sandbag_map	2	-
+sandbag4	b13	13	sandbag_map	3	-
+sandbag5	b14	14	sandbag_map	4	-
+sandbag6	b15	15	sandbag_map	5	-
+
+explo1		s	0	explo1.gif		-
+explo2		s	0	explo2.gif		-
+explo3		s	0	explo3.gif		-
+explo4		s	0	explo4.gif		-
+explo5		s	0	explo5.gif		-
+explo6		s	0	explo6.gif		-
+explo7		s	0	explo7.gif		-
+
+
+explo	explo1;explo2;explo3;explo4;explo5;explo6;explo7	0.5
+
+enemy_tank_r	enemy_tank_r1;enemy_tank_r2;enemy_tank_r3;enemy_tank_r4;	0.5
+enemy_tank_l	enemy_tank_l1;enemy_tank_l2;enemy_tank_l3;enemy_tank_l4;	0.5
+colored_tank	colored_tank1;colored_tank2;colored_tank3;colored_tank4;colored_tank5;colored_tank6;colored_tank7;colored_tank8;	1
