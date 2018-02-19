@@ -64,14 +64,14 @@ public class EnemyCopter extends Enemy {
 		remove();
 		game.score += MED_POINTS;
 		//pop-up for experimental grp2
-				if(PresidentialRescue.control >= 0.5 && PresidentialRescue.control <= 0.75)
+				/*if(PresidentialRescue.control >= 0.5 && PresidentialRescue.control <= 0.75)
 				{
 				popup(game.score);
 				   
 				}
 				// pop-up call for last experimental grp3
 				else if (PresidentialRescue.control >= 0.75)
-				popup(game.score);
+				popup(game.score);*/
 	}
 
 }

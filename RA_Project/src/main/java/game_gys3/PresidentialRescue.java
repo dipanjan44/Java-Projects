@@ -1,3 +1,8 @@
+
+/**
+ * @author Dipanjan
+ * This is the driver program for the game
+ */
 package game_gys3;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -45,6 +50,7 @@ public class PresidentialRescue extends StdGame {
 	public static final String[] guns = { "Cupcake Cannon", "Sparkle Gun",
 			"Star Missiles", "Tennis Gun", "Nyan Lazer" };
 	public static double control = 0.0;
+	public static int game_counter=0;
 
 	public static void main(String[] args) throws IOException,
 			NoSuchFieldException, SecurityException, IllegalArgumentException,
@@ -52,15 +58,21 @@ public class PresidentialRescue extends StdGame {
 			InvocationTargetException, InterruptedException {
 
 		control = PresidentialRescue.randomGen();
-		if (control < 0.25)
+		if (control < 0.40)
 			log4j.trace("This is a control-group");
-		else if (control >= 0.25 && control <= 0.50) {
+		/*else if (control >= 0.25 && control <= 0.50) {
 			log4j.trace("This is an exp-grp1");
 		} else if (control > 0.5 && control < 0.75) {
 			log4j.trace("This is an exp-grp2");
 		} else if (control > 0.75 && control <= 1.00) {
 			log4j.trace("This is an exp-grp3");
-		}
+		}*/
+		/**
+		 * Modified on 01/15/2018 as per the latest requirement
+		 */
+		else if (control >= 0.40) {
+			log4j.trace("This is an exp-grp with no distraction");
+		} 
 
 		System.out.println("Running in mode" + "  " + control);
 		new PresidentialRescue(new JGPoint(768, 576));
@@ -458,18 +470,25 @@ public class PresidentialRescue extends StdGame {
 		if (control < 0.25) {
 			setFrameRate(30, 3);
 		}
-		// speed for experimental grp2 w/o distraction
+		/**
+		 * @author Dipanjan - commented out to stop distractions
+		 */
+		/*// speed for experimental grp1 w/o distraction
 		else if (control >= 0.25 && control <= 0.5) {
 			setFrameRate(40, 3);
 		}
-		// speed for slow experimental grp3 with distractions
+		// speed for slow experimental grp2 with distractions
 		else if (control >= 0.5 && control <= 0.75) {
 			setFrameRate(30, 3);
 		}
 
-		// fast experimental grp4 with distraction
-		else if (control > 0.75)
-			setFrameRate(50, 3);
+		// fast experimental grp3 with distraction
+		else if (control > 0.75 && score==0)
+			setFrameRate(50, 3);*/
+		
+		else if (control > 0.4) {
+			setFrameRate(35, 3);
+		}
 	}
 
 	public void initNewLife() {
@@ -478,6 +497,28 @@ public class PresidentialRescue extends StdGame {
 		if (cheatsEnabled)
 			player.setAnim("colored_tank");
 		player.initializeGracePeriod();
+		
+		/**
+		 * @dipanjan - commented out on 01/20/2018 
+		 * 
+		 */
+		
+		/*if (control > 0.4 && score >= 240) {
+			setFrameRate(85, 3);
+		}
+		else if (control > 0.4 && score >= 200) {
+			setFrameRate(75, 3);
+		}
+		else if (control > 0.4 && score >= 160) {
+			setFrameRate(65, 3);
+		}
+		else if (control > 0.4 && score >= 120) {
+			setFrameRate(55, 3);
+		}
+		else if (control > 0.4 && score >= 60) {
+			setFrameRate(45, 3);
+			
+		}*/
 	}
 
 	private boolean finishedFinalLevel() {
