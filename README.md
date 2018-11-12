@@ -1,3 +1,3 @@
 
-# Adding the different java projects from the academics
+# Java projects from the academics
 
