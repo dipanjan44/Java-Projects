@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Hotel-Reservation-System" />
+        <module name="HRS" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Hotel-Reservation-System" target="8" />
+      <module name="HRS" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
