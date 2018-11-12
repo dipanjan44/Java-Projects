@@ -1,4 +1,4 @@
-package com.dbms.HRS;
+
 
 public class Foodorder {
 	private int id;

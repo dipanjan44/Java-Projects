@@ -1,4 +1,4 @@
-package com.dbms.HRS;
+
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -10,7 +10,6 @@ import java.sql.SQLWarning;
 import java.text.ParseException;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -1022,7 +1021,7 @@ public class HRS {
 	 * This method is invoked whenever the customer orders for food
 	 * 
 	 * @param connection
-	 * @param custid
+	 * @param custId
 	 * @param order
 	 * @throws Exception
 	 */
