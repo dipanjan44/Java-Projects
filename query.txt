@@ -1,3 +1,0 @@
-human human boston
-jar Massachussets
-help buddy help
